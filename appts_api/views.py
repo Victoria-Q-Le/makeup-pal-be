@@ -12,4 +12,4 @@ class ApptList(generics.ListCreateAPIView):
 class ApptDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Appt.object.all().order_by('id')
     serializer_class = ApptSerializer
-#get, delete, put
+# get, delete, put
